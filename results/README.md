@@ -32,6 +32,15 @@
 - `optimizers_config` : `memmap_threshold` is set to `10000000`
 - `hnsw_config`: the `m` and `ef_construct` specified by the experiment
 
+| **m** | **ef_construct** |
+|-------|--------------------|
+| 16 | 128 |
+| 32 | 128 |
+| 32 | 256 |
+| 32 | 512 |
+| 64 | 256 |
+| 64 | 512 |
+
 ### search parameters
 | **Search** | **parallel** | **config: hnsw_ef** |
 |------------|--------------|--------|

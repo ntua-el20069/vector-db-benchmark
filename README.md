@@ -1,5 +1,15 @@
 # vector-db-benchmark
 
+## Vector DB Comparison
+This repository is forked from [vector-db-benchmark](https://github.com/qdrant/vector-db-benchmark). The current repository contains benchmark results for a comparison between Qdrant and Milvus Single Node Engines. The useful files added include:
+- `results/analysis.ipynb`: Notebook that contains analysis of upload, search results and comparison of engine configurations achieving similar precisions.
+- `results/plots-html`: directory that contains diagrams of upload or search metrics as functions of the achieved mean precisions rate.
+- Other directories containing the `json` files with results of each experiment (dataset - engine configuration - upload) or (dataset - engine configuration - search config)
+- `csv` files - each line indicates a different experiment and contains metrics for Qdrant and Milvus (to compare engines with the same configuration)
+- `summary.py`: a command line interface used to show the results for specific/all engine configurations or datasets
+For explanetion about engine and search configurations used for the benchmarking you can see `results/README.md`
+Installation and Run instructions are kept as the base repository below.
+
 ![Screenshot from 2022-08-23 14-10-01](https://user-images.githubusercontent.com/1935623/186516524-a61098d4-bca6-4aeb-acbe-d969cf30674e.png)
 
 > [View results](https://qdrant.tech/benchmarks/)

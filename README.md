@@ -10,8 +10,8 @@ This repository is forked from [vector-db-benchmark](https://github.com/qdrant/v
 
 For explanation about engine and search configurations used for the benchmarking you can see `results/README.md`.
 
-Installation and Run instructions are kept as the base repository below.
-`Prerequisites` and `Setup using venv` were added in order to define the experiments environment explicitly.
+Installation and Run instructions are kept as the base repository below with the addition of
+`Prerequisites` and `Setup using venv` sections in order to define the experiments environment explicitly.
 
 ![Screenshot from 2022-08-23 14-10-01](https://user-images.githubusercontent.com/1935623/186516524-a61098d4-bca6-4aeb-acbe-d969cf30674e.png)
 

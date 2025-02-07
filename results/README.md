@@ -5,6 +5,15 @@
 ### upload constants
 - `parallel`: `16`
 - `index_params`: the `M` and `efConstruction` specified by the experiment
+Engine configurations tested:
+| **** | **M** | **efConstruction** |
+|------------|--------------|--------|
+| **** | 16 | 128 |
+| **** | 32 | 128 |
+| **** | 32 | 256 |
+| **** | 32 | 512 |
+| **** | 64 | 256 |
+| **** | 64 | 512 |
 
 ### search parameters
 | **Search** | **parallel** | **config: ef** |

@@ -10,7 +10,7 @@ This repository is forked from [vector-db-benchmark](https://github.com/qdrant/v
 
 For explanation about engine and search configurations used for the benchmarking you can see `results/README.md`.
 
-Installation and Run instructions are kept as the base repository below.
+Prerequisites section Installation and Run instructions are kept as the base repository below.
 
 ![Screenshot from 2022-08-23 14-10-01](https://user-images.githubusercontent.com/1935623/186516524-a61098d4-bca6-4aeb-acbe-d969cf30674e.png)
 
@@ -33,6 +33,10 @@ implementation and the number of client instances.
 Benchmarks are implemented in server-client mode, meaning that the server is
 running in a single machine, and the client is running on another.
 
+### Prerequisites
+- [Docker Desktop](https://www.docker.com/get-started/)
+- [Python 3](https://www.python.org/downloads/): version 3.10.12 was used for the experiments
+
 ### Run the server
 
 All engines are served using docker compose. The configuration is in the [servers](./engine/servers/).
@@ -45,6 +49,14 @@ docker compose up
 ```
 
 Containers are expected to expose all necessary ports, so the client can connect to them.
+
+### Setup using venv
+We suggest you using a virtual environment in order to use a specific python version (version 3.10.12 was used for the experiments) and manage separate package installations.  
+To create the virtual environment you can use the following command. Then you can activate the virtual environment and install packages, as defined in python documentation [Install packages in a virtual environment using pip and venv](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/).
+```
+python3.10 -m venv .venv
+```
+
 
 ### Run the client
 
